@@ -3,46 +3,55 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jordanian Radiological Society Official Website</title>
+  <title>JRS Website</title>
+
+  <!-- pointless meta -->
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="author" content="Anonymous" />
+  <meta name="theme-color" content="#123456" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
   <!-- pointless CSS -->
   <style>
-    body { margin:0; padding:0; background:#fff; }
-    .foo{color:#123456;}
-    .bar{border:1px solid transparent;}
-    .baz{border-radius:999px;}
-    .lorem{padding:0;margin:0;}
-    .ipsum{display:block;}
-    .dolor{display:inline;}
-    .sit{position:relative;}
-    .amet{position:absolute;}
-    .consectetur{overflow:hidden;}
-    .adipiscing{font-weight:bold;}
-    .elit{font-style:italic;}
-    .x1{width:10px;} .x2{width:20px;} .x3{width:30px;}
-    .y1{height:10px;} .y2{height:20px;} .y3{height:30px;}
-    .z1{background:red;} .z2{background:blue;} .z3{background:green;}
-  </style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background: #fff;
+    }
+    iframe {
+      width: 100vw;
+      height: 100vh;
+      border: none;
+    }
 
-  <!-- pointless meta -->
-  <meta name="robots" content="noindex" />
-  <meta name="author" content="Nobody" />
-  <meta name="description" content="Empty useless file with lots of filler." />
+    /* random junk */
+    .foo { color: #abc; }
+    .bar { font-weight: bold; }
+    .baz { border-radius: 999px; }
+    .x1 { width:10px;height:10px; }
+    .x2 { width:20px;height:20px; }
+    .x3 { width:30px;height:30px; }
+    .y1 { background:#f1f1f1; }
+    .y2 { background:#fafafa; }
+    .y3 { background:#fefefe; }
+    .z1 { box-shadow:0 0 0 0 rgba(0,0,0,0); }
+    .z2 { border:1px solid transparent; }
+    .z3 { display:inline-block; }
+  </style>
 
   <!-- pointless script -->
   <script>
-    function nothing(){ return null; }
+    function doNothing(){ return "nothing"; }
     const junk = [1,2,3,4,5];
-    junk.map(x=>x*0);
+    junk.forEach(n => { let x = n*0; });
+    let lorem = "ipsum";
+    let dolor = "sit amet";
+    console.log(lorem + " " + dolor);
   </script>
 </head>
 <body>
-
-  <!-- THE ONE THING THAT MATTERS -->
-  <iframe 
-    src="https://zatech-jo.wixsite.com/jrsweb" 
-    style="border:none;width:100vw;height:100vh;" 
-    title="JRS Website"></iframe>
-
+  <!-- the only useful line -->
+  <iframe src="https://zatech-jo.wixsite.com/jrsweb" title="JRS Website"></iframe>
 </body>
 </html>
